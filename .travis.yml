@@ -13,3 +13,8 @@ script:
 
 # Dump trial log on failure.
 after_failure: "cat _trial_temp/test.log"
+
+# Only run test when committing to master branch.
+branches:
+  only:
+    - master
